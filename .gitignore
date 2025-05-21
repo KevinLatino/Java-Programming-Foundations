@@ -1,3 +1,6 @@
 /Ejercicio4/target/
 /Ejercicio1/target/
 /Ejercicio2/target/
+.DS_Store
+/.idea/
+/.vscode/
