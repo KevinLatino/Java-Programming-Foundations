@@ -26,16 +26,16 @@ public class Ejercicio8 {
     
     public static void mostrarInformacion() {
         System.out.println("=== CALCULADORA DE FACTORIAL ===");
-        System.out.println("Este programa calcula el factorial de un número");
+        System.out.println("Este programa calcula el factorial de un numero");
         System.out.println();
     }
     
     public static int leerNumero(Scanner scanner) {
-        System.out.print("Ingrese un número entero positivo: ");
+        System.out.print("Ingrese un numero entero positivo: ");
         int numero = scanner.nextInt();
         
         while (numero < 0) {
-            System.out.print("El número debe ser positivo. Ingrese nuevamente: ");
+            System.out.print("El numero debe ser positivo. Ingrese nuevamente: ");
             numero = scanner.nextInt();
         }
         
@@ -65,17 +65,17 @@ public class Ejercicio8 {
     }
     
     public static void mostrarCalculoDetallado(int numero) {
-        System.out.print("Cálculo: " + numero + "! = ");
+        System.out.print("Calculo: " + numero + "! = ");
         
         if (numero == 0) {
-            System.out.println("1 (por definición)");
+            System.out.println("1 (por definicion)");
             return;
         }
         
         for (int i = numero; i >= 1; i--) {
             System.out.print(i);
             if (i > 1) {
-                System.out.print(" × ");
+                System.out.print(" x ");
             }
         }
         System.out.println(" = " + calcularFactorial(numero));
